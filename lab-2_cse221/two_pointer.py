@@ -11,7 +11,7 @@ def two_sum(total_num, sum, arr):
         elif sum_store < sum:
             left_pointer +=1
         else:
-            right_pointer+=1
+            right_pointer-=1
     return -1
 
 total_num, sum = map(int, input().split())
